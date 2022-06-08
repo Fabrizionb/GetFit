@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+  --first-color: #4a7337;
+  --second-color: #6b8c21;
+  --third-color: #ddd48f;
+  --fourth-color: #cda989;
+  --fifth-color: #704012;
+
+
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  max-width: 99%;
+}
+
+body {
+  background: var(--third-color) !important;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--fifth-color);
+}
+
+.container {
+  width: 550px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-family: 'Montserrat Semibold', sans-serif;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  background: var(--fourth-color);
+  ;
+  width: 100%;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--fifth-color);
+  font-size: 14px;
+  padding: 0 15px;
+  outline: none;
+  transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--fifth-color);
+}
+
+.form-group button {
+  background-image: linear-gradient(-90deg, #4a7337 0%, #6b8c21 100%);
+  border-radius: 5px;
+  border: 0;
+  height: 45px;
+  color: var(--fifth-color);
+  font-size: 26px;
+  font-family: 'Montserrat Bold', sans-serif;
+  cursor: pointer;
+}
+
+.form-group:last-child {
+  margin-top: 20px;
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.result-content {
+  margin-top: 10px;
+  background: var(--fourth-color);
+  ;
+  border-radius: 5px;
+  padding: 15px;
+
+}
+
+.result-content ul {
+  list-style: none;
+}
+
+.result-content ul li {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat Bold', sans-serif;
+  line-height: 30px;
+}
+
+.result-content ul li strong {
+  color: var(--first-color);
+}
+
+p.more {
+  font-size: 12px;
+  font-weight: normal;
+  color: inherit;
+}
+
+.logoimg {
+  max-width: 40%;
+}
+
+body>nav {
+  background: var(--first-color);
+
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+body {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+
+header {
+  min-height: 400px;
+}
+
+img.imgFront {
+  opacity: 0.5;
+
+  min-height: 50%;
+}
+
+.modules {
+  gap: 157px;
+
+}
+
+a.btn {
+  background: var(--first-color);
+
+}
+
+
+body > nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
