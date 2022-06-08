@@ -64,7 +64,7 @@ function putTotalCart(arrayCarrito)
 
     let total = arrayCarrito.reduce((a,b)=> 
     {
-        return a + Number(b.subtotal)
+        return Number(a) + Number(b.subtotal)
     }, 0)
     totalHtml.innerText = `$${total}
     `
