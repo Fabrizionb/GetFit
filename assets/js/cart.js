@@ -62,20 +62,19 @@ function putTotalCart(arrayCarrito)
 {
     const totalHtml = document.getElementById("anchor_strong");
 
-    // let total = arrayCarrito.reduce((a,b)=> 
-    // {
-    //     return a + b.subtotal
-    // }, 0)
-    // totalHtml.innerText = `
-    // Total = ${total}
-    // `
-    class ProductoCarrito extends Array {
-        sum(key) {
-            return this.reduce((a, b) => a + (b[key] || 0), 0);
-        }
-    }
-    let money = new ProductoCarrito(...carrito2);
-    totalHtml.innerText = `$${money.sum('subtotal')}`   ;
+    let total = arrayCarrito.reduce((a,b)=> 
+    {
+        return a + Number(b.subtotal)
+    }, 0)
+    totalHtml.innerText = `$${total}
+    `
+    // class ProductoCarrito extends Array {
+    //     sum(key) {
+    //         return this.reduce((a, b) => a + (b[key] || 0), 0);
+    //     }
+    // }
+    // let money = new ProductoCarrito(...carrito2);
+    // totalHtml.innerText = `$${money.sum('subtotal')}`   ;
 }
 
 
