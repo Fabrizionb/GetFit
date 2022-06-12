@@ -365,3 +365,9 @@ h1.text-center {
   #age {
     background-color: #e9ecef;
   }
+
+#anchor_strong, h3 {
+  font-size: 25px;
+  color: var(--fourth-color);
+}
+
