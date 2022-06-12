@@ -14,3 +14,4 @@ function textCart(arrayCarrito) {
     textoCarrito.innerHTML = `${totalProductos}`
 }
 
+textCart(cart)
