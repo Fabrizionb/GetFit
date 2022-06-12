@@ -1,0 +1,275 @@
+.ecommerceMain {
+    background-color: var(--first-color);
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin: 20px;
+    justify-content: center;
+}
+
+
+.card img {
+    max-width: 15vh;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.card {
+    width: 25%;
+    margin: 10px;
+    -webkit-box-shadow: 5px 15px 25px 4px var(--third-color);
+    box-shadow: 5px 15px 25px 4px var(--fourth-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.detailsP {
+    line-height: 30px;
+    max-width: 150px;
+
+
+}
+
+.bookDetails {
+    font-size: 12px;
+}
+
+.cardButton {
+    width: 100%;
+    border: 1px solid var(--third-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--fifth-color);
+    background-color: var(--second-color);
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.cardButton:hover {
+    background-color: var(--third-color);
+
+
+}
+
+.ecommerceHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    border: 2px red solid;
+    margin-left: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline-color: #7A7A7A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.iconCart {
+    font-size: 35px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: black;
+
+
+}
+
+.plus {
+    color: #BFCB70;
+
+
+
+}
+
+.plus:hover {
+    color: #a0aa5e;
+
+}
+
+.minus {
+    color: rgb(233, 72, 72);
+
+}
+
+.minus:hover {
+    color: #f62727;
+
+}
+
+.cart {
+    display: inline;
+    position: relative;
+    background-color: rgb(238, 126, 126);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 8px;
+    bottom: 20px;
+    right: 2px;
+    border: 1px solid crimson;
+
+}
+
+.ecommerceTitle {
+    margin-top: 25px;
+    color: var(--fourth-color);
+
+
+}
+
+.cartL {
+    text-decoration: none;
+    color: inherit;
+    padding-top: 30px;
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+    width: 20%;
+}
+
+.underlineClass:hover {
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 980px) {
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .ecommerceTitle {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cartL {
+        font-size: 12px;
+    }
+
+    .cardContainer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .iconCart {
+        font-size: 30px;
+
+    }
+
+
+}
+
+@media (max-width:350px) {
+
+    .link {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .cartL {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .iconCart {
+        font-size: 30px;
+        margin-right: 0px;
+    }
+
+    .ecommerceTitle {
+        margin-top: 0px;
+    }
+
+}
+
+.body {
+    background-color: var(--first-color) !important;
+}
+
+p:nth-child(3),
+p:nth-child(4),
+strong,
+p.pFix {
+    color: var(--first-font-color);
+
+}
+
+.anadirCarrito {
+    background-color: var(--second-color);
+    border: 1px solid var(--fourth-color);
+    color: var(--fifth-color);
+    transition: all 1s;
+    margin-bottom: 15px;
+}
+
+.anadirCarrito:hover {
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+    border: 1px solid var(--fourth-color);
+
+}
+
+img.shop {
+    border-radius: 10px 10px 0 0;
+    margin-top: 15px;
+}
+
+.single-product {
+    margin-bottom: 3vh;
+}
+
+.cart {
+    display: inline;
+    position: relative;
+    background-color: rgb(238, 126, 126);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 8px;
+    bottom: 20px;
+    right: 2px;
+    border: 1px solid crimson;
+
+}
+
+img.shop{ 
+    max-width: 50%;
+}
+
+.part-2  {
+    background-color: var(--background-color);
+    border-radius: 10px 10px 0 0;
+}
