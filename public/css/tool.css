@@ -361,3 +361,7 @@ h1.text-center {
   h6 {
     font-weight: bold;
   }
+
+  #age {
+    background-color: var(--first-color);
+  }
