@@ -41,7 +41,7 @@ function eliminarProducto(e) {
     e.target.parentNode.parentNode.remove();
 
     localStorage.setItem("carrito", JSON.stringify(carrito2));
-    textCart(cart)
+    textCart(carrito2)
     Toastify({
         text: "Producto eliminado del carrito",
         duration: 1000,
@@ -61,7 +61,7 @@ function eliminarProducto(e) {
         
 }
 
-
+textCart(carrito2)
 function putTotalCart(arrayCarrito)
 {
     const totalHtml = document.getElementById("anchor_strong");
