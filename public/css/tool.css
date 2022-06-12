@@ -305,15 +305,7 @@ h1.text-center {
     margin-top: 30px;
     max-width: 60%;
 
-        font-size: 1rem;
-        letter-spacing: 2px;
-        word-spacing: 2px;
-        color: #000000;
-        font-weight: normal;
-        text-decoration: none;
-        font-style: normal;
-        font-variant: normal;
-        text-transform: none;
+
         
   
   }
@@ -359,7 +351,7 @@ h1.text-center {
 
 
   h6 {
-    font-weight: bold;
+    font-weight: bold!important;
   }
 
   #age {
@@ -367,4 +359,18 @@ h1.text-center {
   }
 
 
-  
+  p.more, h5, h6 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  }
+
+  .resultC{
+    background-color: var(--background-color)
+}

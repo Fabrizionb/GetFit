@@ -93,7 +93,7 @@ function SweetTrigger() {
       imageUrl: '../images/avocado-workout.gif',
 
       imageAlt: 'Custom image',
-      html: 'Al terminar, se cerrara automaticamente y mostrará los resultados.',
+      html: 'Se cerrara automaticamente en <b></b> milisegundos y mostrará los resultados.',
       timer: 2000,
       timerProgressBar: true,
       didOpen: () => {
@@ -290,14 +290,14 @@ function handleSubmit(event) {
   <h2 class="text-center">Aquí esta tu Resultado:</h2>
 
   <div class="result-content mx-auto">  
-    <div class="imc">${totalText}     
+    <div class="imc more">${totalText}     
     
       <p>Su metabolismo basal es de <strong>${tmb} calorias</strong>.</p>
       <p class= "more">
       </p>
       ${basal}
     </div>
-
+    <br>
     <div class="info">
       <p class= "more">
         Para manter su peso usted necesita consumir aproximadamente <strong>${maintenance} calorias</strong>.<br>
@@ -318,13 +318,13 @@ function handleSubmit(event) {
       <p class= "more">
         Usted debería consumir al menos <strong>${waterD} litros de agua por día</strong>.
       </p>
-      ${hidratacion}
+      <p  class= "more">${hidratacion}</p>
     </div>
     <br>
      <div class="sleep">
       <h6>Descansar correctamente</h6>
-      ${sleepText}
-      ${sueño}
+      <p  class= "more">${sleepText}</p>
+      <p  class= "more">${sueño}</p>
     </div>
     <br>
     <div class="exercise">
@@ -332,7 +332,7 @@ function handleSubmit(event) {
       <p class= "more">
       El nivel saludable recomendado de actividad física es de 30-50 minutos de ejercicio moderado durante al menos cinco días a la semana. 
       </p>
-      ${ejericio}
+      <p  class= "more">${ejericio}</p>
       <h6>Debajo encontraras algunas actividades con su gasto calorico aproximado por hora.</h6>
     </div>
     <br>
