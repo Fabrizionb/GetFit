@@ -1,4 +1,4 @@
-// variables const
+// variables
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
@@ -12,7 +12,7 @@ recipeCloseBtn.addEventListener('click', () => {
 });
 
 
-// get the list of recipes with theese ingredients 
+// Obtener la lista de recetas por ingrediente
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
@@ -44,7 +44,7 @@ function getMealList() {
 }
 
 
-// get the recipe
+// obtener la receta
 function getMealRecipe(e) {
     e.preventDefault();
     if (e.target.classList.contains('recipe-btn')) {
@@ -55,7 +55,7 @@ function getMealRecipe(e) {
     }
 }
 
-// layout maker
+// layout
 function mealRecipeModal(meal) {
     console.log(meal);
     meal = meal[0];
@@ -76,4 +76,3 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
-

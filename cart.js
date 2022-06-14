@@ -2,7 +2,6 @@ const carrito2 = JSON.parse(localStorage.getItem("carrito"));
 
 let tbody = document.querySelector("#tbody");
 
-
 function rellenarCarrito(arrayCarrito) {
     for (let producto of arrayCarrito) {
         // let total = 0;

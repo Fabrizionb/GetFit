@@ -73,13 +73,8 @@ const ejericio =
 <li class="result">Tener músculos más fuertes.</li>
 <li class="result">Mejorar el estado de la piel y prevenir el envejecimiento prematuro.</li>
 <li class="result">Oxigenar las arterias y aumentar la capacidad pulmonar, lo que a su vez reduce la fatiga.</li>
-
 </ul>
 `
-
-
-
-
 
 const form = document.getElementById('form');
 
@@ -109,8 +104,6 @@ function SweetTrigger() {
   }).then((result) => {
       /* Read more about handling dismissals below */
       if (result.dismiss === Swal.DismissReason.timer) {
-       
-      
       }
   });
 
@@ -175,11 +168,9 @@ function handleSubmit(event) {
 
     normalHeight = Math.pow(normalHeight, 2)
 
-
     total = normalWeight / normalHeight
     totalshow = total.toFixed(2)
     totalText = ``
-
 
     if (total <= 18) {
       totalText =
@@ -338,15 +329,12 @@ function handleSubmit(event) {
     <br>
   </div>
 `
-
   const result = document.getElementById('result')
-
   result.innerHTML = layout;
 }
 
 function getSelectedValue(id) {
   const select = document.getElementById(id);
-
   return select.options[select.selectedIndex].value;
 }
 

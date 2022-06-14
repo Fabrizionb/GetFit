@@ -1,7 +1,8 @@
-let carrito = []
-let total = 0;
-class ProductoCarrito {
+let carrito = [];
 
+let total = 0;
+
+class ProductoCarrito {
     constructor(nombre, precio, imagen, id, subtotal) {
         this.nombre = nombre;
         this.precio = precio;
@@ -17,7 +18,6 @@ let divContainer = document.getElementById("row");
 function rellenarPagina(arrayProductos) {
 
     for (let producto of arrayProductos) {
-
         let div = document.createElement("div");
         div.classList = "col-md-6 col-lg-3 col-xl-3"
 
@@ -49,7 +49,7 @@ function rellenarPagina(arrayProductos) {
     }
     let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
     if (carritoLocalStorage) {
-        carritoNav(carritoLocalStorage)
+        carritoNav(carritoLocalStorage);
     }
 }
 
@@ -79,7 +79,9 @@ function anadirCarrito(e) {
     }
 
     localStorage.setItem("carrito", JSON.stringify(carrito))
+
     carritoNav(carrito)
+
     Toastify({
         text: "Producto Agregado al Carrito",
         duration: 1000,
@@ -90,10 +92,10 @@ function anadirCarrito(e) {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
-        onClick: function(){} // Callback after click
-      }).showToast();
+        onClick: function () {} // Callback after click
+    }).showToast();
 }
 
 let agregar = document.querySelectorAll(".anadirCarrito");
