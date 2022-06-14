@@ -1,7 +1,7 @@
 // Tool // Calculadora
 
 const data = [{
-    id: 1,
+    id: 0,
     titulo: "Caminar",
     imagen: "https://images.unsplash.com/photo-1487956382158-bb926046304a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371",
     calorias: "1 hora Caminando quema aproximadamente 356 calorias.",
@@ -13,25 +13,25 @@ const data = [{
     calorias: "1 hora corriendo quema aproximadamente 788 calorias.",
   },
   {
-    id: 1,
+    id: 2,
     titulo: "Nadar",
     imagen: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670",
     calorias: "1 hora nadando quema aproximadamente 630 calorias.",
   },
   {
-    id: 1,
+    id: 3,
     titulo: "Saltar la Cuerda",
     imagen: "https://images.unsplash.com/photo-1514994667787-b48ca37155f0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2380",
     calorias: "1 hora Saltando la Cuerda quema aproximadamente 898 calorias.",
   },
   {
-    id: 1,
+    id: 4,
     titulo: "Bicicleta",
     imagen: "https://images.unsplash.com/photo-1517649763962-0c623066013b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870",
     calorias: "1 hora de ciclismo quema aproximadamente 430 calorias.",
   },
   {
-    id: 1,
+    id: 5,
     titulo: "Musculacion",
     imagen: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370",
     calorias: "1 hora de musculacion quema aproximadamente 225 calorias.",
