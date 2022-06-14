@@ -265,7 +265,7 @@ h1.text-center {
     font-size: 14px;
     padding: 0 15px;
     outline: none;
-    transition: border-color 0.2s ease-in;
+    
 
 }
 
@@ -377,9 +377,6 @@ h6 {
 }
 
 .resultC {
-    background-color: var(--background-color);
+    background-color: var(--background-color)important;
 }
 
-input:focus {
-    background-color: var(--background-color) !important;
-}
