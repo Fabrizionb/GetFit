@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetFit - Recipes</title>
+
+
+
+  <!-- Bootstrap Style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Local Style -->
+  <link rel="stylesheet" href="../public/css/common.css">
+  <link rel="stylesheet" href="../public/css/recipe.css">
+  <link rel="shortcut icon" href="../images/small-logo.png">
+</head>
+
+<body>
+  <!--Header Start-->
+  <header>
+    <!--Div Container Start-->
+    <div class="container gradient-custom">
+      <!-- Navbar Code Start-->
+      <nav class="navbar navbar-expand-lg bg-light " role="navigation">
+        <div class="container-fluid d-flex navbar">
+
+          <a class="navbar-brand" href="../index.html">
+            <img src="../images/small-logo.png" alt="" width="70" height="" class="d-inline-block align-text-top">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tool.html">App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cart.html">Carrito<p class="cart" id="cart">0</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recipes.html">Recetas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NavBar Code End-->
+
+      <!-- Banner Code Start-->
+      <img src="../images/background.png"
+        alt="Imagen de banner con verduras cortadas sobre un fondo verde. Las verduras son: pepino, apio, perejil, limon y lechuga"
+        class="backgroundImg">
+      <div class="imgContainer"></div>
+      <!-- Banner Code Start-->
+
+    </div>
+    <!-- Header Div Container End-->
+  </header>
+  <!-- Header End-->
+
+
+
+  <div class="containerM">
+    <div class="meal-wrapper">
+
+      <div class="meal-search">
+        <h2 class="title">Buscador de Recetas por Ingredientes</h2>
+        <blockquote>Deja el campo en blanco para listar todas la recetas.<br>
+          <cite>- los ingredientes deben ser ingresados en idioma inglés.</cite>
+        </blockquote>
+
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h2 class="title">Los Resultados de tu Busqueda:</h2>
+        <div id="meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+                <div class = "meal-img">
+                  <img src = "food.jpg" alt = "food">
+                </div>
+                <div class = "meal-name">
+                  <h3>Potato Chips</h3>
+                  <a href = "#" class = "recipe-btn">Get Recipe</a>
+                </div>
+              </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class="meal-details">
+        <!-- recipe close btn -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class="meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+              <p class = "recipe-category">Category Name</p>
+              <div class = "recipe-instruct">
+                <h3>Instructions:</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+              </div>
+              <div class = "recipe-meal-img">
+                <img src = "food.jpg" alt = "">
+              </div>
+              <div class = "recipe-link">
+                <a href = "#" target = "_blank">Watch Video</a>
+              </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer Code Start-->
+  <!-- <footer class="text-center text-white" style="background-color: #f1f1f1;"> -->
+  <footer class="text-center text-white gradient-custom">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                 Twitter 
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a> -->
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:fabrizio1007@gmail.com" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a> -->
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/fabrizio-bertolo/"
+          role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Fabrizionb" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3 footerBar">
+      © 2022 Copyright:
+      <a class="text-dark" href="#">GetFit</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer Code End-->
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+  </script>
+  <!-- Fontawesomeicons -->
+  <script src="https://kit.fontawesome.com/b926aedcdc.js" crossorigin="anonymous"></script>
+  <!-- Local Scripts -->
+  <script src="../carText.js"></script>
+  <script src="../recipes.js"></script>
+</body>
+
+</html>
