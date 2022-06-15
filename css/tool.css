@@ -380,3 +380,30 @@ h6 {
     background-color: var(--background-color)important;
 }
 
+div.info {
+    padding:2vh;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+div.imc {
+    background-color: var(--background-color);
+    padding:2vh;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.result-content>div, h5 {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
