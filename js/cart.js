@@ -14,7 +14,7 @@ function rellenarCarrito(arrayCarrito) {
 		<th>${producto.subtotal}</th>
 	</tr>
 	</thead>
-        <td><button class="btn btn-danger eliminarProducto">Eliminar</button></td>`
+        <td><button class="btn btn-danger eliminarProducto" id="${producto.id}">Eliminar</button></td>`
         tbody.appendChild(row);
     }
     putTotalCart(carrito2)
