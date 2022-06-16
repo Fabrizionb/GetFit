@@ -35,9 +35,13 @@ Manipulando el DOM se rellena el contenido del Html con los resultados e informa
 ##
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 #
 
 =======
 ## 
 >>>>>>> c043504 (cambiada carpeta js)
+=======
+## 
+>>>>>>> dab52bcf6c0e9d26e58087adc87768edda114038
 
