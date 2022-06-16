@@ -3,12 +3,11 @@
 #
 #
 #
-Como proyecto final de CoderHouse, realicé un simulador que calcula según ciertas fórmulas establecidas el peso ideal, IMC , TMB , calorías para consumir por día, la hidratación necesaria y también la cantidad de horas de sueño al día.
+Como proyecto final de CoderHouse, realicé un simulador que calcula según mediante ciertas fórmulas establecidas el peso ideal, IMC , TMB , calorías para consumir por día, la hidratación necesaria y también la cantidad de horas de sueño al día.
 
 ## Made with 
 - Html
 - Css
-- Sass
 - Bootstrap
 - JavaScript
 - SweetAlert2
@@ -27,7 +26,7 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 
 Parte de un input en el que se le solicitan datos al usuario, mediante la 
 función handleSubmit() obtenemos los datos ingresados por el usuario y comienza a llamar a las funciones imc, waterD, idealW y sleep. 
-Mediante el DOM se rellena el contenido del Html con los resultados e información para el usuario.
+Manipulando el DOM se rellena el contenido del Html con los resultados e información para el usuario.
 
 ### Ver [Demo](https://fabrizionb.github.io/GetFit/) del sitio.
 #
@@ -35,6 +34,5 @@ Mediante el DOM se rellena el contenido del Html con los resultados e informaci�
 ###
 ##
 #
-## License
+## 
 
-**Free Software, Hell Yeah!**
