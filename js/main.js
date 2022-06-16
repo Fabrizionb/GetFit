@@ -3,15 +3,16 @@ let carrito = [];
 let total = 0;
 
 class ProductoCarrito {
-    constructor(nombre, precio, imagen, id, subtotal) {
+    constructor(nombre,precio,imagen,id,subtotal ) {
         this.nombre = nombre;
         this.precio = precio;
         this.imagen = imagen;
-        this.cantidad = 1;
         this.id = id;
+        this.cantidad = 1;
         this.subtotal = precio;
     }
 }
+
 
 let divContainer = document.getElementById("row");
 
@@ -68,7 +69,7 @@ function anadirCarrito(e) {
     let nombre = e.target.parentNode.parentNode.children[1].textContent;
     let precio = e.target.parentNode.parentNode.children[2].textContent;
     let imagen = e.target.parentNode.parentNode.children[4].src;
-    let id = e.target.parentNode.parentNode.children[4].alt;
+    let id = Number(e.target.parentNode.parentNode.children[4].alt);
 
     if (index == -1) {
         const producto = new ProductoCarrito(nombre, precio, imagen, id);
