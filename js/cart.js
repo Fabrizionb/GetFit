@@ -4,8 +4,6 @@ let tbody = document.querySelector("#tbody");
 
 function rellenarCarrito(arrayCarrito) {
     for (let producto of arrayCarrito) {
-        // let total = 0;
-        // total = producto.subtotal + total /REVISAR
         let row = document.createElement("tr");
         row.innerHTML = `   
         <thead>
@@ -20,7 +18,7 @@ function rellenarCarrito(arrayCarrito) {
         tbody.appendChild(row);
     }
     putTotalCart(carrito2)
-        
+
 }
 
 rellenarCarrito(carrito2);
@@ -51,33 +49,23 @@ function eliminarProducto(e) {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, #F52211, #F59A11)",
+            background: "linear-gradient(to right, #F52211, #F59A11)",
         },
-        onClick: function(){} // Callback after click
-      }).showToast();
+        onClick: function () {} // Callback after click
+    }).showToast();
 
-      putTotalCart(carrito2)
-        
+    putTotalCart(carrito2)
+
 }
 
 textCart(carrito2)
-function putTotalCart(arrayCarrito)
-{
+
+function putTotalCart(arrayCarrito) {
     const totalHtml = document.getElementById("anchor_strong");
-    
-    let total = arrayCarrito.reduce((a,b)=> 
-    {
+
+    let total = arrayCarrito.reduce((a, b) => {
         return a + Number(b.subtotal)
     }, 0)
     totalHtml.innerText = `$${total}
     `
-    // class ProductoCarrito extends Array {
-    //     sum(key) {
-    //         return this.reduce((a, b) => a + (b[key] || 0), 0);
-    //     }
-    // }
-    // let money = new ProductoCarrito(...carrito);
-    // totalHtml.innerText = `$${money.sum('subtotal')}`   ;
 }
-
-

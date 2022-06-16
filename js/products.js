@@ -1,5 +1,4 @@
-const productos = [
-    {
+const productos = [{
         nombre: "Small Gratitude Everyday",
         precio: 800,
         imagen: "../images/product1.jpg",
@@ -47,4 +46,4 @@ const productos = [
         product: "product-6",
         descripcion: "Registra tus comidas y vive mejor"
     },
-    ];  
+];

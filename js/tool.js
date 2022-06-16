@@ -81,30 +81,29 @@ const form = document.getElementById('form');
 form.addEventListener('submit', handleSubmit);
 
 function SweetTrigger() {
-  
+
   let timerInterval
   Swal.fire({
-      title: 'Calculando  ',
-      imageUrl: '../images/avocado-workout.gif',
+    title: 'Calculando  ',
+    imageUrl: '../images/avocado-workout.gif',
 
-      imageAlt: 'Custom image',
-      html: 'Se cerrara automaticamente en <b></b> milisegundos y mostrará los resultados.',
-      timer: 2000,
-      timerProgressBar: true,
-      didOpen: () => {
-          Swal.showLoading()
-          const b = Swal.getHtmlContainer().querySelector('b')
-          timerInterval = setInterval(() => {
-              b.textContent = Swal.getTimerLeft()
-          }, 100)
-      },
-      willClose: () => {
-          clearInterval(timerInterval)
-      }
+    imageAlt: 'Custom image',
+    html: 'Se cerrara automaticamente en <b></b> milisegundos y mostrará los resultados.',
+    timer: 1500,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading()
+      const b = Swal.getHtmlContainer().querySelector('b')
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft()
+      }, 100)
+    },
+    willClose: () => {
+      clearInterval(timerInterval)
+    }
   }).then((result) => {
-      /* Read more about handling dismissals below */
-      if (result.dismiss === Swal.DismissReason.timer) {
-      }
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {}
   });
 
 }
