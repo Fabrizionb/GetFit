@@ -8,7 +8,6 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 ## Made with 
 - Html
 - Css
-- Sass
 - Bootstrap
 - JavaScript
 - SweetAlert2
@@ -35,6 +34,6 @@ Mediante el DOM se rellena el contenido del Html con los resultados e informaci�
 ###
 ##
 #
-## License
+#
 
-**Free Software, Hell Yeah!**
+
