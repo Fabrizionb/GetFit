@@ -84,7 +84,7 @@ a.nav-link:hover {
     .imgContainer {
         display: block;
         height: 12vh;
-        background-image: url("../../images/background3.png");
+        background-image: url("../images/background3.png");
         background-repeat: no-repeat;
         background-size: contain;
         border-radius: 10px 10px 0px 0px;

@@ -20,7 +20,7 @@ let cartMark2 = document.getElementById("cart")
 function emtpyMark (){
     readCarrito = Object.keys(cart).length
     if (readCarrito <= 0){
-       
+    
         cartMark2.classList.add("d-none")
         
     }   else {
