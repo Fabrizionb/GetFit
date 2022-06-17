@@ -27,7 +27,7 @@ function rellenarPagina(arrayProductos) {
                                                 <p class="pFix"> ${producto.nombre}</p>
                                                     <p class="pFix"> ${producto.descripcion}</p>
                                                     <p class="pFix">Precio: $ <strong> ${producto.precio}</strong></p>
-                                                    <button class="btn mx-auto d-block  btn-xs anadirCarrito">Añadir al Carrito</button>
+                                                    <button ontouchstart="anadirCarrito()" class="btn mx-auto d-block  btn-xs anadirCarrito">Añadir al Carrito</button>
                                         </div>
                                                 
                                                 
@@ -101,7 +101,7 @@ let agregar = document.querySelectorAll(".anadirCarrito");
 
 agregar.forEach(elemento => {
     elemento.addEventListener("click", anadirCarrito)
-    elemento.addEventListener("touchStart", anadirCarrito)
+    
 })
 // Escribir la cantidad de productos
 function carritoNav(arrayCarrito) {
