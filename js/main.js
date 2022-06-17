@@ -43,7 +43,7 @@ function rellenarPagina(arrayProductos) {
 rellenarPagina(productos);
 
 function anadirCarrito(e) {
-    //  console.log(e.target.parentNode.children[0].src) //finder
+      console.log(e.target.parentNode.children[3].children[0].textContent); //finder
     let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 
     if (carritoLocalStorage) {
@@ -63,12 +63,12 @@ function anadirCarrito(e) {
   }
   cartMark()
 
-    let index = carrito.findIndex(producto => producto.id == e.target.parentNode.children[4].alt);
+    let index = carrito.findIndex(producto => producto.id == e.target.parentNode.children[0].alt);
 
     let nombre = e.target.parentNode.children[1].textContent;
-    let precio = e.target.parentNode.children[2].textContent;
+    let precio = e.target.parentNode.children[3].children[0].textContent;
     let imagen = e.target.parentNode.children[0].src;
-    let id = e.target.parentNode.children[4].alt;
+    let id     = e.target.parentNode.children[4].alt;
 
     if (index == -1) {
         const producto = new ProductoCarrito(nombre, precio, imagen, id);
