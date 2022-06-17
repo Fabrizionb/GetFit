@@ -15,7 +15,7 @@ const productos = [{
         descripcion: "Recetas para inspirar al chef  interior"
     },
     {
-        nombre: "Beginners Guide to Fitness for Woman",
+        nombre: "Fitness for Woman",
         precio: 899,
         imagen: "../images/product3.jpg",
         id: 3,
@@ -44,6 +44,6 @@ const productos = [{
         imagen: "../images/product6.jpg",
         id: 6,
         product: "product-6",
-        descripcion: "Registra tus comidas y vive mejor"
+        descripcion: "Registra tus comidas"
     },
 ];

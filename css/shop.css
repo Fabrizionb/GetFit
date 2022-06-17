@@ -1,24 +1,6 @@
-.ecommerceMain {
-    background-color: var(--first-color);
-}
-
-.cardContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-    margin: 20px;
-    justify-content: center;
-}
 
 
-.card img {
-    max-width: 15vh;
-    padding: 10px;
-    width: 100%;
-
-}
-
-.card {
+/* .card {
     width: 25%;
     margin: 10px;
     -webkit-box-shadow: 5px 15px 25px 4px var(--third-color);
@@ -29,9 +11,9 @@
     align-items: center;
 
 
-}
+} */
 
-.detailsP {
+/* .detailsP {
     line-height: 30px;
     max-width: 150px;
 
@@ -40,9 +22,9 @@
 
 .bookDetails {
     font-size: 12px;
-}
+} */
 
-.cardButton {
+/* .cardButton {
     width: 100%;
     border: 1px solid var(--third-color);
     border-radius: 5px;
@@ -54,14 +36,14 @@
     cursor: pointer;
     transition: all 1s;
 
-}
+} */
 
-.cardButton:hover {
-    background-color: var(--third-color);
+/* .cardButton:hover {
+    background-color: crimson;
 
 
-}
-
+} */
+/* 
 .ecommerceHeader {
     display: flex;
     justify-content: flex-end;
@@ -83,13 +65,13 @@ input[type=number] {
 
 input:focus {
     outline-color: #7A7A7A;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
-.iconCart {
+/* .iconCart {
     font-size: 35px;
     margin-right: 5px;
     margin-left: 5px;
@@ -97,49 +79,11 @@ a {
     color: black;
 
 
-}
-
-.plus {
-    color: #BFCB70;
+} */
 
 
 
-}
-
-.plus:hover {
-    color: #a0aa5e;
-
-}
-
-.minus {
-    color: rgb(233, 72, 72);
-
-}
-
-.minus:hover {
-    color: #f62727;
-
-}
-
-.cart {
-    display: inline;
-    position: relative;
-    background-color: rgb(238, 126, 126);
-    border-radius: 50%;
-    padding: 8px;
-    font-size: 8px;
-    bottom: 20px;
-    right: 2px;
-    border: 1px solid crimson;
-
-}
-
-.ecommerceTitle {
-    margin-top: 25px;
-    color: var(--fourth-color);
-}
-
-.cartL {
+/* .cartL {
     text-decoration: none;
     color: inherit;
     padding-top: 30px;
@@ -147,11 +91,26 @@ a {
     text-align: right;
     margin-right: 20px;
     width: 20%;
-}
+} */
 
-.underlineClass:hover {
+/* .underlineClass:hover {
     text-decoration: underline;
-}
+} */
+
+
+
+/* .body {
+    background-color: var(--first-color) !important;
+} */
+
+/* p:nth-child(3),
+p:nth-child(4),
+strong,
+p.pFix {
+    color: var(--first-font-color);
+
+} */
+
 
 
 
@@ -174,77 +133,86 @@ a {
 }
 
 @media (max-width: 600px) {
-    .cartL {
+    /* .cartL {
         font-size: 12px;
-    }
+    } */
 
     .cardContainer {
         padding: 0;
         margin: 0;
     }
 
-    .iconCart {
+    /* .iconCart {
         font-size: 30px;
 
-    }
+    } */
 
 
 }
 
 @media (max-width:350px) {
 
-    .link {
+    /* .link {
         font-size: 14px;
         margin-right: 10px;
-    }
+    } */
 
-    .cartL {
+    /* .cartL {
         margin-right: 0;
         font-size: 12px;
-    }
+    } */
 
-    .iconCart {
+    /* .iconCart {
         font-size: 30px;
         margin-right: 0px;
-    }
+    } */
 
     .ecommerceTitle {
         margin-top: 0px;
     }
 
 }
-
-.body {
-    background-color: var(--first-color) !important;
+.ecommerceMain {
+    background-color: var(--first-color);
 }
 
-p:nth-child(3),
-p:nth-child(4),
-strong,
-p.pFix {
-    color: var(--first-font-color);
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin: 20px;
+    justify-content: center;
+}
 
+
+.card-img-top {
+    max-width: 15vh;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.ecommerceTitle {
+    margin-top: 25px;
+    color: var(--fourth-color);
 }
 
 .anadirCarrito {
-    background-color: var(--second-color);
+    background-color: var(--third-color);
     border: 1px solid var(--fourth-color);
-    color: var(--fifth-color);
+    color: var(--first-font-color);
     transition: all 1s;
-    margin-bottom: 15px;
+    margin-bottom: 15px!important;
 }
 
 .anadirCarrito:hover {
-    background-color: var(--third-color);
-    color: var(--fifth-color);
+    background-color: var(--fourth-color);
+    color: var(--second-font-color);
     border: 1px solid var(--fourth-color);
 
 }
 
-img.shop {
-    border-radius: 10px 10px 0 0;
-    margin-top: 15px;
-}
 
 .single-product {
     margin-bottom: 3vh;
@@ -263,11 +231,13 @@ img.shop {
 
 }
 
-img.shop{ 
-    max-width: 50%;
-}
 
-.part-2  {
+
+.single-product  {
+    align-items: center;
     background-color: var(--background-color);
     border-radius: 10px 10px 0 0;
+    max-width:80%;
+    padding: 10px;
+    border: 1px solid var(--fourth-color);
 }
