@@ -85,3 +85,6 @@ tbody tr:nth-child(odd) {
   color: var(--fourth-color);
 }
 
+#emptyCartImg {
+  opacity: 0.7;
+}

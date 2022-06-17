@@ -82,7 +82,7 @@ function anadirCarrito(e) {
     localStorage.setItem("carrito", JSON.stringify(carrito))
 
     carritoNav(carrito)
-
+    textCart(carrito)
     Toastify({
         text: "Producto Agregado al Carrito",
         duration: 1000,

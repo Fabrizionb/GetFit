@@ -3,6 +3,14 @@ const carrito = JSON.parse(localStorage.getItem("carrito"));
 let tbody = document.querySelector("#tbody");
 
 function rellenarCarrito(arrayCarrito) {
+
+    if (carrito.length >=1){
+
+        title  = document.getElementById("cartTitle")
+        empty = document.getElementById("emptyCartImg")
+        empty.classList.add("d-none")
+        title.classList.add("d-none")
+
     for (let producto of arrayCarrito) {
         
         let row = document.createElement("tr");
@@ -19,7 +27,16 @@ function rellenarCarrito(arrayCarrito) {
         tbody.appendChild(row);
     }
     putTotalCart(carrito)
-        
+} else {
+        title  = document.getElementById("cartTitle")
+        empty = document.getElementById("emptyCartImg")
+        empty.classList.remove("d-none")
+        title.classList.remove("d-none")
+
+        table = document.getElementById("sectionTable")
+        table.classList.add("d-none")
+}
+
 }
 
 rellenarCarrito(carrito);
@@ -58,6 +75,16 @@ function eliminarProducto(e) {
 
       putTotalCart(carrito)
       textCart(carrito)
+      if (carrito.length <=0){
+        title  = document.getElementById("cartTitle")
+        empty = document.getElementById("emptyCartImg")
+        empty.classList.remove("d-none")
+        title.classList.remove("d-none")
+
+        table = document.getElementById("sectionTable")
+        table.classList.add("d-none")
+        
+      }
 }
 
 textCart(carrito)
