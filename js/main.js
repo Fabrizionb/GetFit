@@ -100,7 +100,8 @@ function anadirCarrito(e) {
 let agregar = document.querySelectorAll(".anadirCarrito");
 
 agregar.forEach(elemento => {
-    elemento.addEventListener("click touchstart", anadirCarrito)
+    elemento.addEventListener("click", anadirCarrito)
+    elemento.addEventListener("touchStart", anadirCarrito)
 })
 // Escribir la cantidad de productos
 function carritoNav(arrayCarrito) {
