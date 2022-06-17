@@ -3,7 +3,8 @@
 #
 #
 #
-Como proyecto final de CoderHouse, realicé un simulador que calcula según ciertas fórmulas establecidas el peso ideal, IMC , TMB , calorías para consumir por día, la hidratación necesaria y también la cantidad de horas de sueño al día.
+Como proyecto final de CoderHouse, realicé un simulador que calcula según ciertas fórmulas establecidas el peso ideal, 
+IMC , TMB , calorías para consumir por día, la hidratación necesaria y también la cantidad de horas de sueño al día.
 
 ## Made with 
 - Html
