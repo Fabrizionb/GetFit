@@ -94,3 +94,8 @@ a.nav-link:hover {
         display: none;
     }
 }
+
+.ecommerceTitle {
+    margin-top: 25px;
+    color: var(--fourth-color);
+}

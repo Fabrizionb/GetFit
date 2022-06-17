@@ -1,3 +1,4 @@
+//Escribir la cantidad de productos en el carrito
 const cart = JSON.parse(localStorage.getItem("carrito"));
 
 function textCart(arrayCarrito) {
@@ -12,3 +13,20 @@ function textCart(arrayCarrito) {
     textoCarrito.innerHTML = `${totalProductos}`
 }
 textCart(cart)
+
+//Pintar o despintar productos en el carrito
+let cartMark2 = document.getElementById("cart")
+
+function emtpyMark (){
+    readCarrito = Object.keys(cart).length
+    if (readCarrito < 1){
+       
+        cartMark2.classList.add("d-none")
+        
+    }   else {
+        
+        cartMark2.classList.remove("d-none")
+    }
+    
+}
+emtpyMark();

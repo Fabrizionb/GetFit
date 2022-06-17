@@ -43,7 +43,6 @@ function getMealList() {
         });
 }
 
-
 // obtener la receta
 function getMealRecipe(e) {
     e.preventDefault();
@@ -76,3 +75,15 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
+
+// Categoria Listado
+// http://www.themealdb.com/api/json/v1/1/list.php?c=list
+
+// Area Listado
+// http://www.themealdb.com/api/json/v1/1/list.php?a=list
+
+// Filter by Category
+// http://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+
+

@@ -1,4 +1,4 @@
-let carrito = [];
+let carrito =  JSON.parse(localStorage.getItem("carrito"));
 
 let total = 0;
 
@@ -28,8 +28,8 @@ function rellenarPagina(arrayProductos) {
                                             </div>
                                             <div class="part-2 text-center">
                                                 <ul>
-                                                  <img src="${producto.imagen}" class="card-img-top shop" alt="${producto.id}" >
-                                                  <p class="pFix"> ${producto.nombre}</p>
+                                                <img src="${producto.imagen}" class="card-img-top shop" alt="${producto.id}" >
+                                                <p class="pFix"> ${producto.nombre}</p>
                                                     <p class="pFix"> ${producto.descripcion}</p>
                                                     <p class="pFix">Precio: $ <strong> ${producto.precio}</strong></p>
                                                     <button class="btn  btn-xs anadirCarrito">Añadir al Carrito</button>
@@ -77,11 +77,9 @@ function anadirCarrito(e) {
         carrito[index].cantidad++;
         carrito[index].subtotal = carrito[index].precio * carrito[index].cantidad;
     }
-
+   
     localStorage.setItem("carrito", JSON.stringify(carrito))
-
-    carritoNav(carrito)
-
+    emtpyMark(carrito)
     Toastify({
         text: "Producto Agregado al Carrito",
         duration: 1000,
@@ -96,6 +94,7 @@ function anadirCarrito(e) {
         },
         onClick: function () {} // Callback after click
     }).showToast();
+
 }
 
 let agregar = document.querySelectorAll(".anadirCarrito");
@@ -116,4 +115,17 @@ function carritoNav(arrayCarrito) {
 
     textoCarrito.innerHTML = "";
     textoCarrito.innerHTML = `${totalProductos}`
+}
+
+function emtpyMark(){
+    readCarrito = Object.keys(cart).length
+    if (readCarrito < 1){
+       
+        cartMark2.classList.add("d-none")
+        
+    }   else {
+        
+        cartMark2.classList.remove("d-none")
+    }
+    
 }

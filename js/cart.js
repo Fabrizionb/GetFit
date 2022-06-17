@@ -2,24 +2,49 @@ const carrito2 = JSON.parse(localStorage.getItem("carrito"));
 
 let tbody = document.querySelector("#tbody");
 
+let emptyCart = document.getElementById("emptyCartImg")
+let fullCart = document.getElementById("sectionTable")
+let cartMark = document.getElementById("cart")
+let cartTitle = document.getElementById("cartTitle")
+
+emtpyImg();
+function emtpyImg (){
+    readCarrito = Object.keys(carrito2).length
+    if (readCarrito < 1){
+        fullCart.classList.add("d-none")//sectionTable
+        cartMark.classList.add("d-none")//cart
+        emptyCart.classList.remove("d-none")
+        cartTitle.classList.remove("d-none")//cartTitle
+        
+    }   else {
+        emptyCart.classList.add("d-none")//emptyCartImg
+        cartTitle.classList.add ("d-none")//cartTitle
+        fullCart.classList.remove("d-none")//sectionTable
+        cartMark.classList.remove("d-none")//cart
+    }
+}
+
+
 function rellenarCarrito(arrayCarrito) {
+    
     for (let producto of arrayCarrito) {
         let row = document.createElement("tr");
         row.innerHTML = `   
         <thead>
-	<tr>
-		<th>${producto.nombre}</th>
-		<th>${producto.precio}</th>
-		<th>${producto.cantidad}</th>
-		<th>${producto.subtotal}</th>
-	</tr>
-	</thead>
+    <tr>
+        <th>${producto.nombre}</th>
+        <th>${producto.precio}</th>
+        <th>${producto.cantidad}</th>
+        <th>${producto.subtotal}</th>
+    </tr>
+    </thead>
         <td><button class="btn btn-danger eliminarProducto" id="${producto.id}">Eliminar</button></td>`
         tbody.appendChild(row);
     }
     putTotalCart(carrito2)
-
+    
 }
+
 
 rellenarCarrito(carrito2);
 
@@ -32,7 +57,7 @@ botonesEliminar.forEach(elemento => {
 function eliminarProducto(e) {
 
     let index = carrito2.findIndex(producto => producto.id == e.target.id)
-
+    
     carrito2.splice(index, 1);
 
     e.target.parentNode.parentNode.remove();
@@ -53,9 +78,9 @@ function eliminarProducto(e) {
         },
         onClick: function () {} // Callback after click
     }).showToast();
-
-    putTotalCart(carrito2)
-
+;
+    putTotalCart(carrito2);
+    emtpyImg();
 }
 
 textCart(carrito2)

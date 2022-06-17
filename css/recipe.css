@@ -354,3 +354,8 @@
     border: 1px solid crimson;
 
 }
+
+.ecommerceTitle {
+    margin-top: 25px!important;
+    color: var(--fourth-color)!important;
+}

@@ -5,14 +5,11 @@ tbody tr:nth-child(odd) {
   tbody tr:nth-child(even) {
     background-color: var(--background-color);
   }
-  
- 
+   
   
   table {
     background-color: var(--first-color);
   }
-
-
 
   th {
     min-width: 20vh;
@@ -85,3 +82,8 @@ tbody tr:nth-child(odd) {
   color: var(--fourth-color);
 }
 
+#emptyCartImg {
+  margin-top: 2vh;
+  width: 50%;
+  opacity: 0.5;
+  }
