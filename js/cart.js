@@ -35,7 +35,7 @@ function eliminarProducto(e) {
     let index = carrito.findIndex(producto => producto.id == e.target.id)
     
     carrito.splice(index, 1);
-    console.log(e.target.parentNode.parentNode.children[2])
+    //console.log(e.target.parentNode.parentNode.children[2])
 
      e.target.parentNode.parentNode.remove();
 
