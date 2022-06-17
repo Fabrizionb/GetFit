@@ -63,6 +63,19 @@ function anadirCarrito(e) {
         carrito = carritoLocalStorage;
     }
 
+   
+// Pintar o Despintar el numero de productos
+  function cartMark() {
+    let cartMark1 = document.getElementById("cart")
+    readCarrito = Object.keys(cart).length
+    if(readCarrito  >= 0){
+        cartMark1.classList.remove("d-none")
+    }else {
+        cartMark1.classList.add("d-none")
+    }
+  }
+  cartMark()
+
     let index = carrito.findIndex(producto => producto.id == e.target.parentNode.parentNode.children[4].alt);
 
     let nombre = e.target.parentNode.parentNode.children[1].textContent;
@@ -77,9 +90,9 @@ function anadirCarrito(e) {
         carrito[index].cantidad++;
         carrito[index].subtotal = carrito[index].precio * carrito[index].cantidad;
     }
-   
+    carritoNav(carrito)
     localStorage.setItem("carrito", JSON.stringify(carrito))
-    emtpyMark(carrito)
+    
     Toastify({
         text: "Producto Agregado al Carrito",
         duration: 1000,
@@ -102,11 +115,10 @@ let agregar = document.querySelectorAll(".anadirCarrito");
 agregar.forEach(elemento => {
     elemento.addEventListener("click", anadirCarrito)
 })
-
+// Escribir la cantidad de productos
 function carritoNav(arrayCarrito) {
 
     let textoCarrito = document.getElementById("cart");
-
     let totalProductos = 0;
 
     for (let producto of arrayCarrito) {
