@@ -43,7 +43,7 @@ function rellenarPagina(arrayProductos) {
 rellenarPagina(productos);
 
 function anadirCarrito(e) {
-    //  console.log(e.target.parentNode.children[0].src) finder
+    //  console.log(e.target.parentNode.children[0].src) //finder
     let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 
     if (carritoLocalStorage) {

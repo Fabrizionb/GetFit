@@ -22,6 +22,9 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 - Cantidad de litros de Agua por día
 - Cantidad de horas de sueño
 
+- Consume datos de una API, para mostrar recetas filtando por ingrediente.
+
+- Ecommerce y Carrito utilizando localStorage
 
 
 Parte de un input en el que se le solicitan datos al usuario, mediante la 
