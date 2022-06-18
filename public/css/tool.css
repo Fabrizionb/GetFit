@@ -383,3 +383,10 @@ h6 {
 input:focus {
     background-color: var(--background-color) !important;
 }
+
+div.imc {
+    background-color: var(--background-color);
+    padding:2vh;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
