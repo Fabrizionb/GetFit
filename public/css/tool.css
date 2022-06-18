@@ -384,9 +384,29 @@ input:focus {
     background-color: var(--background-color) !important;
 }
 
-div.imc {
+div.imc, div.info {
     background-color: var(--background-color);
     padding:2vh;
     background-color: var(--background-color);
     border-radius: 5px;
+}
+
+
+.result-content>div, h5 {
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+p,
+h5,
+h6 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }

@@ -89,7 +89,7 @@ function SweetTrigger() {
 
       imageAlt: 'Custom image',
       html: 'Se cerrara automaticamente en <b></b> milisegundos y mostrará los resultados.',
-      timer: 2000,
+      timer: 1500,
       timerProgressBar: true,
       didOpen: () => {
           Swal.showLoading()
@@ -294,15 +294,13 @@ function handleSubmit(event) {
         Para manter su peso usted necesita consumir aproximadamente <strong>${maintenance} calorias</strong>.<br>
         Para perder su peso usted necesita consumir aproximadamente <strong>${loseWeight} calorias</strong>.<br>
         Para ganar su peso usted necesita consumir aproximadamente <strong>${gainWeight} calorias</strong>.<br>
+        Su peso ideal aproximado debería ser <strong> ${idealW} kilogramos</strong>.
       </p>
     </div>
 
-    <div class="idealw">
-      <p class= "more"> Su peso ideal aproximado debería ser <strong> ${idealW} kilogramos</strong>.</p>
-    </div>
-
     <br>
-    <h5>Algunos consejos saludables:</h5> 
+    <div class="info">
+    <h6>Algunos consejos saludables:</h6> 
     <br>
     <div class="water">
       <h6>Manetener la hidratacion</h6>
@@ -328,6 +326,8 @@ function handleSubmit(event) {
     </div>
     <br>
   </div>
+    </div>
+
 `
   const result = document.getElementById('result')
   result.innerHTML = layout;
