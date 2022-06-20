@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chart.js": "^3.8.0",
     "sweetalert2": "^11.4.17",
     "toastify-js": "^1.11.2"
   }

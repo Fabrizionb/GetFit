@@ -76,7 +76,12 @@ a.nav-link:hover {
     background-color: var(--third-color);
 }
 
+.ecommerceTitle {
+    margin-top: 25px;
+    color: var(--fourth-color);
 
+
+}
 
 /* NavBar, Header & Footer End */
 
