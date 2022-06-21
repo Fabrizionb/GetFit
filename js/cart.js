@@ -160,6 +160,6 @@ function getDate(){
     const weekAdd = now.plus({days: 10}).toFormat("EEEE ' 'd' de' MMMM'");
 
    
-    document.getElementById('date2').innerHTML = weekAdd
+    document.getElementById('date2').innerHTML = weekAdd 
     
 }
