@@ -3,12 +3,13 @@ let carrito = [];
 let total = 0;
 
 class ProductoCarrito {
-    constructor(nombre,precio,imagen,id,subtotal ) {
+    constructor(nombre,precio,imagen,id, descripcion, subtotal ) {
         this.nombre = nombre;
         this.precio = precio;
         this.imagen = imagen;
         this.id = id;
         this.cantidad = 1;
+        this.descripcion = descripcion;
         this.subtotal = precio;
     }
 }
@@ -57,7 +58,7 @@ function rellenarPagina(arrayProductos) {
 rellenarPagina(productos);
 
 function anadirCarrito(e) {
-    // console.log(e.target.parentNode.parentNode.children[4].alt)
+     //console.log(e.target.parentNode.children[2].textContent)
     let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 
     if (carritoLocalStorage) {
@@ -70,9 +71,10 @@ function anadirCarrito(e) {
     let precio = e.target.parentNode.parentNode.children[2].textContent;
     let imagen = e.target.parentNode.parentNode.children[4].src;
     let id = Number(e.target.parentNode.parentNode.children[4].alt);
+    let descripcion = e.target.parentNode.children[2].textContent;
 
     if (index == -1) {
-        const producto = new ProductoCarrito(nombre, precio, imagen, id);
+        const producto = new ProductoCarrito(nombre, precio, imagen, id, descripcion);
         carrito.push(producto);
     } else {
         carrito[index].cantidad++;

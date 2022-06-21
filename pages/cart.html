@@ -55,7 +55,7 @@
                                 <a class="nav-link" href="./shop.html">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./cart.html">Carrito<p class="cart" id="cart">0</p></a>
+                                <a class="nav-link" href="./cart.html">Carrito</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./recipes.html">Recetas</a>
@@ -68,7 +68,7 @@
 
             <!-- Banner Code Start-->
             <img src="../images/background.png"
-                alt="Imagen de banner con verduras cortadas sobre un fondo verde. Las verduras son: pepino, apio, perejil, limon y lechuga"
+                alt=""
                 class="backgroundImg">
             <div class="imgContainer"></div>
             <!-- Banner Code Start-->
@@ -81,7 +81,7 @@
     <main class="container-sm container">
         <h1 class="mb-5 mt-5 text-center ecommerceTitle" id="cartTitle"><strong>Carrito Vacío</strong></h1>
         <img class="emptyCart  mx-auto d-block" id="emptyCartImg" src="../images/empty-cart.png" alt="">
-        <section class="sectionTable container" id="sectionTable">
+        <!-- <section class="sectionTable container" id="sectionTable">
             <table class="demo">
                 <br class="table table-danger text-center">
                 <tr>
@@ -96,7 +96,87 @@
             </table>
             <h3 class="totalS">Total = <strong id="anchor_strong"></strong> </h3>
             <button class="btn  btn-xs checkOut">Checkout</button>
-        </section>
+        </section> -->
+
+            <!-- Cart Code Start-->
+    <section class="h-100 gradient-custom " id="sectionCart">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Carrito - <strong id="cartS"> </strong>items</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Single item -->
+                            
+                            <!-- Single item -->
+                            <hr class="my-4" />
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>Entrega: <strong>10 días</strong> luego de realizada la compra .</p>
+                            <p class="mb-0 date1" id="date1">Fecha Estimada:</p>
+                            <p class="mb-0 date2" id="date2"></p>
+                        </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body">
+                            <p><strong>Aceptamos</strong></p>
+                            <img class="me-2" width="45px"
+                                src="https://img.icons8.com/color/48/undefined/visa.png"
+                                alt="Visa" />
+                            <img class="me-2" width="45px"
+                                src="https://img.icons8.com/color/48/undefined/paypal.png"
+                                alt="PayPal" />
+                            <img class="me-2" width="45px"
+                                src="https://img.icons8.com/fluency/48/undefined/money-transfer.png"
+                                alt="Transferencia Bancaria" />
+                            <img class="me-2" width="45px"
+                                src="https://img.icons8.com/color/48/undefined/mercado-pago.png"
+                                alt="MercadoPago" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card mb-4 sticky-top">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Tu Carrito</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                    Productos
+                                    <span>$53.98</span>
+                                </li> -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    Envío
+                                    <span>Gratis</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                    <div>
+                                        <strong>Total</strong>
+                                        <strong>
+                                            <p class="mb-0">(Impuestos Incluidos)</p>
+                                        </strong>
+                                    </div>
+                                    <span id="anchor_strong">  </span>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="btn btn-primary btn-lg btn-block">
+                                Ir a pagar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer Code Start-->
@@ -138,9 +218,11 @@
     <script src="https://kit.fontawesome.com/b926aedcdc.js" crossorigin="anonymous"></script>
     <!-- Toasty Scripts -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Luxon Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
     <!-- Local Scripts -->
-    <script src="../js/carText.js"></script>
     <script src="../js/cart.js"></script>
+    
 </body>
 </body>
 
