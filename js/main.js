@@ -21,10 +21,10 @@ function rellenarPagina(arrayProductos) {
 
     for (let producto of arrayProductos) {
         let div = document.createElement("div");
-        div.classList = "col-md-6 col-lg-3 col-xl-3"
+        div.classList = "col-md-6 col-lg-3 col-xl-3 mt-3"
 
         div.innerHTML = `
-                                        <div id="${producto.product}" class="single-product">
+                                        <div id="${producto.product}">
                                             <div class="part-1">
                                                 <!--<span class="discount">50% off</span>-->
                                             </div>
