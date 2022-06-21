@@ -56,7 +56,7 @@ function rellenarCarrito(arrayCarrito) {
             
 
                 <div class="form-outline">
-                    <input id="form1" min="0" name="quantity" value="${producto.cantidad}" type="number"
+                    <input id="form1" min="0" name="quantity" value="${producto.cantidad}" type="text"
                         class="form-control" />
                     <label class="form-label" for="form1">Cantidad</label>
                 </div>
@@ -156,7 +156,7 @@ function getDate(){
     var DateTime = luxon.DateTime;
     const now = DateTime.local().setLocale('sp')
     
-    const weekAdd = now.plus({days: 7}).toFormat("EEEE ' 'd' de' MMMM'");
+    const weekAdd = now.plus({days: 10}).toFormat("EEEE ' 'd' de' MMMM'");
 
    
     document.getElementById('date2').innerHTML = weekAdd
