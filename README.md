@@ -10,8 +10,10 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 - Css
 - Bootstrap
 - JavaScript
+
 - SweetAlert2
 - Toastify
+- Luxon
 
 ## Features
 
@@ -26,7 +28,7 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 
 Parte de un input en el que se le solicitan datos al usuario, mediante la 
 función handleSubmit() obtenemos los datos ingresados por el usuario y comienza a llamar a las funciones imc, waterD, idealW y sleep. 
-Mediante el DOM se rellena el contenido del Html con los resultados e información para el usuario.
+Manipulando el DOM se rellena el contenido del Html con los resultados e información personalizada para el usuario.
 
 ### Ver [Demo](https://fabrizionb.github.io/GetFit/) del sitio.
 #
