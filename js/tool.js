@@ -1,5 +1,6 @@
 // Tool // Calculadora
 
+//Datos y Layouts
 const data = [{
     id: 0,
     titulo: "Caminar",
@@ -75,9 +76,9 @@ const ejericio =
 <li class="result">Oxigenar las arterias y aumentar la capacidad pulmonar, lo que a su vez reduce la fatiga.</li>
 </ul>
 `
-
+//Obtener el form
 const form = document.getElementById('form');
-
+//Listener del form
 form.addEventListener('submit', handleSubmit);
 
 function SweetTrigger() {
@@ -109,6 +110,7 @@ function SweetTrigger() {
 
 }
 
+//Funcion principal
 function handleSubmit(event) {
   event.preventDefault();
   SweetTrigger()
@@ -124,25 +126,25 @@ function handleSubmit(event) {
     (66 + (13.7 * weight) + (5 * height) - (6.8 * age))
   );
 
-  // Lose Gain Weight Calculator
+  // Ganar Perder peso
   const maintenance = Math.round(tmb * Number(activityLevel))
   const loseWeight = maintenance - 450;
   const gainWeight = maintenance + 450
 
 
-  // Hidratation Calculator
+  // Hidratacion
   const waterD =
     gender === 'female' ?
     ((weight * 35) / 1000) :
     ((weight * 35) / 1000)
 
-  // Ideal Weaight Calculator
+  // Peso ideal
   const idealW =
     gender === 'female' ?
     (height - 108) :
     (height - 105)
 
-  // Exercise Cal burn 
+  // Burner
   const app = document.getElementById("app");
   for (const ejercicio of data) {
     app.innerHTML += `
@@ -158,7 +160,7 @@ function handleSubmit(event) {
   `;
   }
 
-  //Imc Calculator
+  // Imc 
 
   function imc() {
     normalWeight = getInputNumberValue('weight')
@@ -218,7 +220,7 @@ function handleSubmit(event) {
   imc()
 
 
-  //Sleep Calculator
+  // descanso
 
   function sleep() {
     const ageSleep = getInputNumberValue('age')

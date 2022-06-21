@@ -1,7 +1,9 @@
+// Setear carrito
 let carrito = [];
 
 let total = 0;
 
+// Constructor
 class ProductoCarrito {
     constructor(nombre,precio,imagen,id, descripcion, subtotal ) {
         this.nombre = nombre;
@@ -14,9 +16,10 @@ class ProductoCarrito {
     }
 }
 
-
+//Obtener container
 let divContainer = document.getElementById("row");
 
+// Rellenar tienda
 function rellenarPagina(arrayProductos) {
 
     for (let producto of arrayProductos) {
@@ -54,11 +57,11 @@ function rellenarPagina(arrayProductos) {
         carritoNav(carritoLocalStorage);
     }
 }
-
 rellenarPagina(productos);
 
+// Agregar al Carrito
 function anadirCarrito(e) {
-     //console.log(e.target.parentNode.children[2].textContent)
+     //console.log(e.target.parentNode.children[2].textContent)Buscador de target
     let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 
     if (carritoLocalStorage) {
@@ -107,6 +110,7 @@ agregar.forEach(elemento => {
     elemento.addEventListener("click", anadirCarrito)
 })
 
+// Pintador de total en Navbar
 function carritoNav(arrayCarrito) {
 
     let textoCarrito = document.getElementById("cart");

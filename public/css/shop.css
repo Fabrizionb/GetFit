@@ -229,17 +229,14 @@ p.pFix {
 }
 
 .anadirCarrito {
-    background-color: var(--second-color);
-    border: 1px solid var(--fourth-color);
-    color: var(--fifth-color);
-    transition: all 1s;
+    background-color: var(--second-color) !important;
+    border: 1px solid var(--fourth-color) !important;
+    color: var(--fourth-color)!important;
     margin-bottom: 15px;
 }
 
 .anadirCarrito:hover {
-    background-color: var(--third-color);
-    color: var(--fifth-color);
-    border: 1px solid var(--fourth-color);
+    background-color: var(--third-color)!important;
 
 }
 

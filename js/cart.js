@@ -1,7 +1,10 @@
+// Obtener Carrito
 let carrito = JSON.parse(localStorage.getItem("carrito"));
 
+// Obtener Container
 let cardBody = document.querySelector(".card-body");
 
+// Pintar el Total del Carrito
 function putTotalCart(arrayCarrito) {
     const totalHtml = document.getElementById("anchor_strong");
 
@@ -12,6 +15,7 @@ function putTotalCart(arrayCarrito) {
     `
 }
 
+// Rellenar el Carrito
 function rellenarCarrito(arrayCarrito) {
 
     if (carrito.length >= 1) {
@@ -91,13 +95,13 @@ function rellenarCarrito(arrayCarrito) {
     }
     getDate()
 }
-
 rellenarCarrito(carrito);
 
+// Eliminar productos del carrito
 function eliminarProducto(e) {
 
     let index = carrito.findIndex(producto => producto.id == e.currentTarget.id)
-    
+
     carrito.splice(index, 1);
     //console.log(e.target.parentNode.parentNode.children[2])Finder
 
@@ -131,10 +135,10 @@ function eliminarProducto(e) {
 
         sectionCart = document.getElementById("sectionCart")
         sectionCart.classList.add("d-none")
-
     }
 }
 
+// Total del carrito en Header
 function textSCart(arrayCarrito) {
 
     let subtextoCarrito = document.getElementById("cartS");
@@ -149,19 +153,19 @@ function textSCart(arrayCarrito) {
 }
 textSCart(carrito)
 
+//Obtener fecha estimada
 function getDate() {
     var DateTime = luxon.DateTime;
     const now = DateTime.local().setLocale('sp')
 
     const weekAdd = now.plus({
         days: 10
-    }).toFormat("EEEE ' 'd' 'MMMM' de'");
-
+    }).toFormat(`EEEE ' 'd' 'MMMM' de 'y'</br> Entre las 9 am y las 19 pm`);
 
     document.getElementById('date2').innerHTML = weekAdd
-
 }
 
+//EventListeners botones carrito
 let botonesEliminar = document.querySelectorAll(".eliminarProducto");
 let botonesSumar = document.querySelectorAll(".sumarProducto")
 let botonesRestar = document.querySelectorAll(".restarProducto")
@@ -178,6 +182,7 @@ botonesRestar.forEach(elemento => {
     elemento.addEventListener("click", restarProducto)
 })
 
+//Boton plus Carrito
 function sumarProducto(e) {
     let index = carrito.findIndex(producto => producto.id == e.currentTarget.id)
 
@@ -190,6 +195,7 @@ function sumarProducto(e) {
     location.reload();
 }
 
+//Boton minus Carrito
 function restarProducto(e) {
     let index = carrito.findIndex(producto => producto.id == e.currentTarget.id)
 
@@ -212,7 +218,6 @@ function restarProducto(e) {
 
         localStorage.setItem("carrito", JSON.stringify(carrito));
 
-
     } else {
         Swal.fire({
             icon: 'error',
@@ -222,7 +227,16 @@ function restarProducto(e) {
             footer: 'Si no desea el producto, pruebe eliminándolo.'
         })
     }
-
-
-
 }
+
+//Boton Pago
+let checkOut = document.getElementById("checkOut");
+checkOut.addEventListener('click', () => {
+    Swal.fire({
+        
+        icon: 'success',
+        title: 'Pago realizado con exito',
+        showConfirmButton: false,
+        timer: 1000
+      });
+});
