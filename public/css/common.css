@@ -99,3 +99,19 @@ a.nav-link:hover {
         display: none;
     }
 }
+
+.navCart {
+    background-color: var(--second-color) !important;
+  border: 1px solid var(--fourth-color) !important;
+  color: var(--fourth-color)!important;
+}
+
+.navCart:hover {
+    background-color: var(--third-color)!important;
+}
+
+.badge {
+    /* color: crimson!important; */
+    background-color: var(--fourth-color) !important;
+    border: 1px solid var(--fourth-color) !important;
+}

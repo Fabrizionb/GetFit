@@ -104,3 +104,7 @@ tbody tr:nth-child(odd) {
   border: 1px solid var(--fourth-color) !important;
   color: var(--fourth-color)!important;
 }
+
+.d-flex {
+  display: flex !important;
+}
