@@ -24,31 +24,42 @@ function rellenarPagina(arrayProductos) {
 
     for (let producto of arrayProductos) {
         let div = document.createElement("div");
-        div.classList = "col-md-6 col-lg-3 col-xl-3 mt-3"
+        div.classList = "col-lg-4 col-md-12 mb-4 box"
 
         div.innerHTML = `
-                                        <div id="${producto.product}">
-                                            <div class="part-1">
-                                                <!--<span class="discount">50% off</span>-->
+                                    <div>
+                                        <!-- Card -->
+                                        <div class="card card-ecommerce">
+                                            <!-- Card image -->
+                                            <div class="view overlay">
+                                                <img src="${producto.imagen}" class="img-fluid" alt="${producto.id}">
+                                                <a>
+                                                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                                </a>
                                             </div>
-                                            <div class="part-2 text-center">
-                                                <ul>
-                                                  <img src="${producto.imagen}" class="card-img-top shop" alt="${producto.id}" >
-                                                  <p class="pFix"> ${producto.nombre}</p>
-                                                    <p class="pFix"> ${producto.descripcion}</p>
-                                                    <p class="pFix">Precio: $ <strong> ${producto.precio}</strong></p>
-                                                    <button class="btn  btn-xs anadirCarrito">Añadir al Carrito</button>
-                                                    
-                                                </ul>
-                                                    <h3 class="product-title" style="display:none";>${producto.nombre}</h3>
-                                                    <h4 class="product-price" style="display:none";>${producto.precio}</h4>
-                                                    <p class="product-price" style="display:none";>${producto.id} </p>
-                                                    <img src="${producto.imagen}" class="card-img-top shop" style="display:none"; alt="${producto.id}" >
-                                                    <p class="product-price" style="display:none";>${producto.subtotal} </p>
+                                            <!-- Card image -->
+                                            <!-- Card content -->
+                                            <div class="card-body">
+                                                <!-- Category & Title -->
+                                                <h5 class="card-title mb-1"><strong>${producto.nombre}</strong></h5><span
+                                                    class="badge badge-danger mb-2">new</span>
+                                                <!-- Description -->
+                                                <p>${producto.descripcion}</p>
+                                                <!-- Card footer -->
+                                                <div class="card-footer pb-0">
+                                                    <div class="row mb-0 text-center">
+                                                        <span class="float-left">Precio: $<strong>${producto.precio}</strong></span>
+                                                        <span class="float-right">
+                                                        <br>
+                                                        <button class="btn  btn-xs anadirCarrito ">Añadir al Carrito</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <!-- Card content -->
                                         </div>
-                                                
-                                                
+                                        <!-- Card -->
+                                    </div>
         `
         divContainer.appendChild(div)
     }
@@ -61,20 +72,20 @@ rellenarPagina(productos);
 
 // Agregar al Carrito
 function anadirCarrito(e) {
-     //console.log(e.target.parentNode.children[2].textContent)Buscador de target
+     //console.log(e.target.parentNode.parentNode.parentNode.parentNode)finder
     let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 
     if (carritoLocalStorage) {
         carrito = carritoLocalStorage;
     }
 
-    let index = carrito.findIndex(producto => producto.id == e.target.parentNode.parentNode.children[4].alt);
+    let index = carrito.findIndex(producto => producto.id == e.target.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].alt);
 
-    let nombre = e.target.parentNode.parentNode.children[1].textContent;
-    let precio = e.target.parentNode.parentNode.children[2].textContent;
-    let imagen = e.target.parentNode.parentNode.children[4].src;
-    let id = Number(e.target.parentNode.parentNode.children[4].alt);
-    let descripcion = e.target.parentNode.children[2].textContent;
+    let nombre = e.target.parentNode.parentNode.parentNode.parentNode.children[0].children[0].textContent;
+    let precio = e.target.parentNode.parentNode.children[0].children[0].textContent;
+    let imagen = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
+    let id = Number(e.target.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].alt);
+    let descripcion = e.target.parentNode.parentNode.parentNode.parentNode.children[2].textContent;
 
     if (index == -1) {
         const producto = new ProductoCarrito(nombre, precio, imagen, id, descripcion);

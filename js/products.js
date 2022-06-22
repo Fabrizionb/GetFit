@@ -16,7 +16,7 @@ const productos = [
         product: "product-2",
     },
     {
-        nombre: "Beginners Guide to Fitness for Woman",
+        nombre: "Guide to Fitness for Woman",
         precio: 899,
         imagen: "../images/product3.jpg",
         id: 3,

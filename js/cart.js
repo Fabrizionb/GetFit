@@ -46,7 +46,7 @@ function rellenarCarrito(arrayCarrito) {
             <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                 <!-- Data -->
                 <p><strong>${producto.nombre}</strong></p>
-                <p>Descripción:${producto.descripcion}</p>
+                <p>Descripción: ${producto.descripcion}</p>
                 <p>Precio: <strong>$${producto.precio}</strong></p>
                 <p>Subtotal: <strong>$${producto.subtotal}</strong></p>
                 <button id="${producto.id}" type="button" class="btn btn-primary btn-sm me-1 mb-2 remove eliminarProducto"
