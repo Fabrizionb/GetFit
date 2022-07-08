@@ -16,7 +16,7 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 - Luxon
 
 ## Features
-
+- Calculo de IMC (indice de masa corporal)
 - Calculo de peso ideal
 - Calculo de IMC (índice de masa corporal)
 - Calculo de TMB (tasa metabólica basal)
