@@ -18,7 +18,6 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 ## Features
 
 - Calculo de peso ideal
-- Calculo de IMC (índice de masa corporal)
 - Calculo de TMB (tasa metabólica basal)
 - Calculo de calorías para consumir por día para ganar o perder peso
 - Cantidad de litros de Agua por día
