@@ -7,7 +7,7 @@ Como proyecto final de CoderHouse, realicé un simulador que calcula según cier
 
 ## Made with 
 - Html
-- Cssg
+- Css
 - Bootstrap
 - JavaScript
 
